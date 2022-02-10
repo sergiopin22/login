@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container{
+    width:100%;
+    height:100vh;
+    /* background-color: cyan; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:40px;
+    color: rgb(211, 26, 2);
+}
+
+.container_image{
+    width:50%;
+    height:100%;
+    border-right: 5px dashed red;
+}
+
+img{
+    width:100%;
+    height:100%;
+    filter: contrast(1.5);
+    object-fit: cover;
+}
+
+.container_login{
+    width:50%;
+    height:100%;
+    background-color: rgb(14, 41, 68);
+}
+
+.container_name{
+    width:100%;
+    height:30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_form{
+    width:100%;
+    height:50%; 
+    /* background-color:blue; */
+    display: flex;
+    flex-direction:flex;
+    align-items: center;
+    justify-content:center;
+    color:wheat;
+}
+
+input{
+    width:100%;
+    padding:0.5em;
+    margin: 0 0 1em 0;
+    border: 0;
+}
+
+button{
+    width:50%;
+    /* display: block; */
+    padding:0.4em;
+    background-color:rgb(211, 26, 2);
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.paragraph{
+    text-align: center;
+}
+
+.container_credits{
+    width:100%;
+    height:20%;
+    /* background-color: brown; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+b{
+    margin: 0 0 2em 0;
+    color:white;
+}
+
+:visited{
+    color:red;
+}
+
+::selection{
+    color: black;
+    background-color: wheat;
+}
+
+:focus{
+    color: red;
+}
+
+@media (max-width: 800px) {
+    .container_image{
+        display: none;
+    }
+    .container_login{
+        width:100%;
+    }
+}
